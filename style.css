@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+body, div, section, article, header, footer {
+    background-color: black;
+    color: rgb(187, 187, 187);
+    margin: 0;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    font-family: "Noto Serif KR", sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, p {
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 180%;
+
+    text-align: left;
+}
+
+strong {
+    font-weight: 400;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    height: 50px;
+
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+    padding: 10px 0;
+}
+
+.header span {
+    font-weight: 600;
+}
+
+
+/* Article */
+
+/* Prologue */
+
+.prologue {
+    margin: 300px 0 0 0;
+    height: 2300px;
+    
+}
+
+.prologue p{
+    text-align: center;
+}
+
+
+/* Intro */
+
+.intro{
+    margin: 60px 0;
+    text-align: center;
+}
+
+.intro h1 {
+    color: white;
+    margin: 10px 0;
+    font-size: 50px;
+    line-height: 120%;
+    font-weight: 800;
+}
+
+.intro p {
+    text-align: center;
+}
+
+
+
+.text {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.highlight {
+    border-bottom: 2px solid #a53095;
+}
+
+
+
+@media screen and (max-width: 640px)
+{
+    .intro h1 {
+        color: white;
+        margin: 10px 0;
+        font-size: 40px;
+        line-height: 120%;
+        font-weight: 800;
+    }
+
+    .text {
+        padding : 0 20px;
+    }
+
+}
+
+
+/* Fade */
+.appear {
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.position {
+    position: fixed;
+    transform: translate(300px, 400px);
+}
+
+.fade-in{
+    opacity: 1;
+}
